@@ -9,6 +9,8 @@ enableRobotsTXT = true
 # why you'd want to avoid inline styles, see
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src#unsafe_inline_styles
 [markup]
+  [markup.goldmark.renderer]
+    unsafe="true"
   [markup.highlight]
     lineNos = true
     lineNumbersInTable = false
