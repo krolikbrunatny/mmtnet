@@ -13,7 +13,7 @@ I've started with a simple problem: drawing a line on a pixel grid, and I've bec
 
 ## The task
 
-Having a computer screen, draw a straight line from pixel A to pixel B. Not with a pen though. Computer screens have milions of pixels nowadays, so let's simplify things a bit. Consider the following conditions:
+Draw a straight line on the screen from pixel A to pixel B. Not with a pen though. Computer screens have milions of pixels nowadays, so let's simplify things a bit. Consider the following conditions:
 
 Grid: ` 6x4`<br />Pixel A: `(1, 1)`<br />Pixel B: `(6, 3)`
 
@@ -49,7 +49,7 @@ That's it. The line can't be any straighter, believe me. You now understand the 
 
 ## Math
 
-I encourage you to derive the equations on a piece of paper. I don't want you to come up with everything on your own, just do it while looking at Ela Claridge's [elegant derivation](/assets/posts/bresenhams-line/bresenhams-derivation.pdf) from the University of Birmingham.
+I encourage you to derive the equations on a piece of paper. I don't want you to come up with everything on your own, just do it while looking at this [elegant derivation](/assets/posts/bresenhams-line/bresenhams-derivation.pdf) presented by Ela Claridge from the University of Birmingham.
 
 ## Play
 
