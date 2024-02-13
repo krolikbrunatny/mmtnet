@@ -1,6 +1,6 @@
 ---
 title: "Posts"
-description: Homepage, list of posts
+description: I write about programming and my other life struggles.
 menu: "main"
 weight: 1
 ---
