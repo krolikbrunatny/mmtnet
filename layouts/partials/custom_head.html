@@ -1,0 +1,6 @@
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
+{{ if or .Params.p5js .Site.Params.p5js }}
+{{ partial "p5js.html" . }}
+{{ end }}
