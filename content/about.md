@@ -11,7 +11,7 @@ weight: 2
 It's difficult to write about yourself and I find it especially cute when someone does it in the third person. I've opted to create this bullet list with sentences that start with “I”:
 
 - I'm a self-taught software engineer
-- I study Physics, [<s>see my reflections after finishing 1st semester</s>]()
+- I study Physics, see [Studying Physics pays off my ADHD tax](/posts/studying-physics-pays-off-my-adhd-tax/)
 - I'm concerned about consequences of climate change
 - I don't tell people that I'm vegan
 - I enjoy cooking for my friends
