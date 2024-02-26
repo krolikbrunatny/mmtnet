@@ -6,7 +6,7 @@ date: 2024-02-03
 weight: 2
 ---
 
-## About
+# About
 
 It's difficult to write about yourself and I find it especially cute when someone does it in the third person. I've opted to create this bullet list with sentences that start with “I”:
 
