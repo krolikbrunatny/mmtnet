@@ -19,3 +19,5 @@ It's difficult to write about yourself and I find it especially cute when someon
 - I am a first generation of Generation Z
 - I struggle(d) with ADHD and I intend to write about it
 - I wish you a good day
+
+Many thanks to [@clente](https://clente.github.io/hugo-bearcub/) for creating the fantastic theme that powers this website.
