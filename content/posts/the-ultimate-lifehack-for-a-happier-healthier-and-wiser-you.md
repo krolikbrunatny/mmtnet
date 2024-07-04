@@ -1,7 +1,7 @@
 ---
 title: The ultimate lifehack for a happier, healthier, and wiser you
 date: 2024-07-04
-description:
+description: Help yourself
 ---
 
 The title isn't a clickbait. This is how I feel after a year, so take my word for it, or better yet - try it for yourself.
