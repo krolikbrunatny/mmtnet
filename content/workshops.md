@@ -1,0 +1,57 @@
+---
+title: Workshops
+menu: main
+description: Introduction to creative programming
+date: 2024-07-04
+disableEmailReply: true
+weight: 3
+---
+
+# Fundamentals of Creative Coding
+
+<img alt="a poster featuring a laptop and a snake" src="/assets/workshops/1.jpg" />
+
+Hey there!
+
+I'd like to invite you to an intensive, hands-on workshop on creative coding.
+
+We will explore what a computer is, how programs work, and what code is all about. From there, we will discover how to draw various shapes and bring those drawings to life, creating interesting visuals. Get ready to write a lot of code!
+
+If you've never written any code before, don't worry, we'll start from scratch.
+
+We'll be using JavaScript and p5.js library for our coding adventures. The concepts you'll learn will be invaluable if you choose to explore other programming languages in the future.
+
+## Course format
+
+This is an on-site 30-hour course, in English.
+
+It will take place in [Teatr Komuna Warszawa](https://maps.app.goo.gl/M9MYVhRjuvsoFLh86) on the street Emilii Plater 31.
+
+The course is free of charge.
+
+The course runs from August 5th to 16th. We'll meet Monday through Friday, 9 AM to 12 PM, for two consecutive weeks.
+
+## Prerequisites
+
+- minimum age requirement: 16 years old
+- any laptop with a browser (Firefox recommended)
+- willingness to complete the workshop and dedicate 20-30 minutes a day to homework
+
+## What we will cover
+
+- functions, variables, and conditional statements
+- code debugging
+- loops and animation
+- randomness and procedural generation
+- user input handling
+- objects and classes
+
+## How to start
+
+Send an email to workshops@makemethink.net to sign up.
+
+We do not accept students who are being pressured by parents to take the workshop. Students need to be able to handle their own email correspondence.
+
+---
+
+Heavily inspired by [HappyCoding.io](https://happycoding.io/) (Kevin Workman) and [Serious Programming Courses](https://sites.google.com/view/serious-programming/) (Mark Galassi).
