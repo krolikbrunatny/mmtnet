@@ -4,6 +4,8 @@ menu: main
 description: Introduction to creative programming
 date: 2024-07-04
 disableEmailReply: true
+images:
+  - /assets/workshops/1.jpg
 weight: 3
 ---
 
