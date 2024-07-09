@@ -25,17 +25,24 @@ We'll be using JavaScript and p5.js library for our coding adventures. The conce
 
 ## Course format
 
-This is an on-site 30-hour course, in English.
-
-It will take place in [Teatr Komuna Warszawa](https://maps.app.goo.gl/M9MYVhRjuvsoFLh86) on the street Emilii Plater 31.
-
 The course is free of charge.
 
-The course runs from August 5th to 16th. We'll meet Monday through Friday, 9 AM to 12 PM, for two consecutive weeks.
+The course spans 5 days, with each day consisting of 3 hours, totaling 15 hours overall.
+
+This is on-site course, in English. It will take place in [Teatr Komuna Warszawa](https://maps.app.goo.gl/M9MYVhRjuvsoFLh86) on the street Emilii Plater 31.
+
+You can choose from one of the following dates:
+
+- August 7th (Wednesday) to August 13th (Tuesday)
+- August 14th (Wednesday) to August 20th (Tuesday)
+
+We meet from 9 AM to 12 PM.
+
+_Note: Weekends are off for both sessions._
 
 ## Prerequisites
 
-- minimum age requirement: 16 years old
+- minimum age requirement: 15 years old
 - any laptop with a browser (Firefox recommended)
 - willingness to complete the workshop and dedicate 20-30 minutes a day to homework
 
