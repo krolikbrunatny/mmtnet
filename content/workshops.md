@@ -59,6 +59,8 @@ _Note: Weekends are off for both sessions._
 
 Send an email to workshops@makemethink.net to sign up.
 
+Not sure if this course is the right fit for you? Please get in touch! 🤗
+
 We do not accept students who are being pressured by parents to take the workshop. Students need to be able to handle their own email correspondence.
 
 ---
