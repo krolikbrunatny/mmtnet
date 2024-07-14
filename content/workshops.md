@@ -36,7 +36,7 @@ You can choose from one of the following dates:
 - August 7th (Wednesday) to August 13th (Tuesday)
 - August 14th (Wednesday) to August 20th (Tuesday)
 
-We meet from 9 AM to 12 PM.
+We meet from 5 PM to 8 PM.
 
 _Note: Weekends are off for both sessions._
 
