@@ -34,11 +34,11 @@ This is on-site course, in English. It will take place in [Teatr Komuna Warszawa
 You can choose from one of the following dates:
 
 - August 7th (Wednesday) to August 13th (Tuesday)
-- August 14th (Wednesday) to August 20th (Tuesday)
+- August 19th (Monday) to August 23th (Friday)
 
 We meet from 5 PM to 8 PM.
 
-_Note: Weekends are off for both sessions._
+_Note: Weekend is off for the first session._
 
 ## Prerequisites
 
