@@ -15,7 +15,7 @@ weight: 3
 
 Hey there!
 
-I'd like to invite you to an intensive, hands-on workshop on creative coding.
+In collaboration with [Inclusive.Buzz](https://inclusive.buzz), I would like to invite you to an intensive, hands-on workshop on creative coding.
 
 We will explore what a computer is, how programs work, and what code is all about. From there, we will discover how to draw various shapes and bring those drawings to life, creating interesting visuals. Get ready to write a lot of code!
 
