@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{- $image := resources.Get .Params.Resource }}
+<content>
+  <h1>{{ .Title }}</h1>
+  <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+    {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+  </time>
+  <p>{{ .Description }}</p>
+  <div class="breakthrough">
+    <img src="{{ $image.RelPermalink }}" loading="lazy" alt="{{ .Title }}" />
+  </div>
+</content>
+{{ end }}
