@@ -1,0 +1,13 @@
+{{ define "main" }}
+<content>
+  {{ .Content }}
+  {{ $pages := where site.RegularPages "Type" "photos" }}
+  {{ $paginator := .Paginate $pages.ByTitle 2 }}
+
+  {{ range $paginator.Pages }}
+    My photo.
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+</content>
+{{ end }}
