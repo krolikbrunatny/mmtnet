@@ -1,0 +1,59 @@
+import { lines, replace_once, trim } from "std"
+
+fun get_template_str(title, desc, date, src) {
+  let template = "---
+title: \"{title}\"
+date: {date}
+---
+{desc}
+<img src=\"{src}\" alt=\"{title}\" />"
+
+  return template
+}
+
+// Gets title from the latest commit that touched this file
+fun get_title_from_commit(file) {
+  let title = $git log -n 1 --format=%s -- {file}$ failed {
+    echo "Git log failed with status: {status}" 
+  }
+
+  return trim(title)
+}
+
+// Gets description from the latest commit that touched this file
+fun get_desc_from_commit(file) {
+  let desc = $git log -n 1 --format=%B -- {file} | tail -n +2$ failed {
+    echo "Git log failed with status: {status}" 
+  }
+
+  return trim(desc)
+}
+
+// Gets the date from the very FIRST commit
+fun get_date_from_commit(file) {
+  let date = $git log --reverse --date=format:'%Y-%m-%d' --format=%cd -- {file} | head -1$ failed {
+    echo "Git log failed with status:: {status}"
+  }
+
+  return trim(date)
+}
+
+main (args) {
+  let photos_path = "./static/assets/photos"
+
+  let images = lines($find {photos_path} -type f -name "*.jpg" -exec basename \{\} \;$ failed {
+    echo "Find command failed with status: {status}"
+  })
+
+  let photos_url = replace_once(photos_path, "./static", "")
+  loop idx, name in images {
+    let file = photos_path + "/" + name
+    let title = get_title_from_commit(file)
+    let desc = get_desc_from_commit(file)
+    let date = get_date_from_commit(file)
+    let src = photos_url + "/" + name
+    echo get_template_str(title, desc, date, src)
+  }
+}
+
+
