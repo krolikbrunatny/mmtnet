@@ -12,3 +12,7 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+
+# Daily shots generated markdown files
+/content/shots/*.md
+!/content/shots/_index.md

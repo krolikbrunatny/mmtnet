@@ -1,0 +1,27 @@
+{{ define "main" }}
+<content>
+  {{ .Content }}
+
+  {{ $pages := where site.RegularPages "Type" "shots" }}
+  {{ $paginator := .Paginate $pages.ByDate.Reverse 10 }}
+  <section class="shots-list">
+    {{ range $paginator.Pages }}
+      {{- $image := resources.Get .Params.Resource }}
+      {{- $jpg := $image.Resize "1440x" }}
+      <figure>
+        <figcaption>
+          <h3>{{ .Title }}</h3>
+          <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+            {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+          </time>
+        </figcaption>
+        <a href="{{ .RelPermalink }}">
+          <img src="{{ $jpg.RelPermalink }}" loading="lazy" alt="{{ .Title }}" />
+        </a>
+      </figure>
+    {{ end }}
+  </section>
+
+  {{ template "_internal/pagination.html" . }}
+</content>
+{{ end }}

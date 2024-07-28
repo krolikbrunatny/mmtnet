@@ -1,0 +1,78 @@
+import { lines, replace_once, replace_regex, replace, trim } from "std"
+
+fun get_template_str(title, desc, date, resource) {
+  let template = "---
+title: {title}
+description: {desc}
+params:
+  resource: {resource}
+date: {date}
+style: shots/css/shots-single.css
+---"
+  return template
+}
+
+// Gets title from the latest commit that touched this file
+fun get_title_from_commit(file) {
+  let title = $git log -n 1 --format=%s -- {file}$ failed {
+    echo "Git log failed with status: {status}" 
+  }
+
+  return trim(title)
+}
+
+// Gets description from the latest commit that touched this file
+fun get_desc_from_commit(file) {
+  let desc = $git log -n 1 --format=%B -- {file} | tail -n +2$ failed {
+    echo "Git log failed with status: {status}" 
+  }
+  desc = trim(desc)
+
+  // Remove new lines in the beginning of a string
+  desc = $echo "{desc}" | sed '1\{/^[[:space:]]*\$/d;}'$ failed {
+    echo "Failed to remove new lines in the beginning of a string, status: {status}"
+  }
+
+  if desc == "" {
+    return "No description."
+  }
+
+  return desc
+
+}
+
+// Gets the date from the very FIRST commit
+fun get_date_from_commit(file) {
+  let date = $git log --reverse --date=format:'%Y-%m-%d' --format=%cd -- {file} | head -1$ failed {
+    echo "Git log failed with status:: {status}"
+  }
+
+  return trim(date)
+}
+
+main (args) {
+  let shots_path = "./assets/shots"
+
+  let images = lines($find {shots_path} -type f -name "*.jpg" -exec basename \{\} \;$ failed {
+    echo "Find command failed with status: {status}"
+  })
+
+  let resources_path = replace_once(shots_path, "./assets/", "")
+  loop idx, name in images {
+    let file = shots_path + "/" + name
+    let title = get_title_from_commit(file)
+    let desc = get_desc_from_commit(file)
+    let date = get_date_from_commit(file)
+    let resource = resources_path + "/" + name
+    let contents = get_template_str(title, desc, date, resource)
+
+    let md_file = replace(title, " ", "-")
+    md_file = md_file + ".md"
+
+    $echo "{contents}" > ./content/shots/{md_file}$ failed {
+      echo "Markdown file creation failed with status: {status}"
+    }
+  }
+}
+
+
