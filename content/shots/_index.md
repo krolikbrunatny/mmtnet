@@ -4,8 +4,7 @@ menu: main
 description: I make random shots and publish them here. Take a look!
 date: 2024-07-28
 weight: 4
-menu: main
-style: shots/css/shots-list.css
+style: shots/css/list.css
 ---
 
 # Daily Shots

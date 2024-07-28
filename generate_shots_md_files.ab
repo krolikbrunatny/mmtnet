@@ -7,7 +7,7 @@ description: {desc}
 params:
   resource: {resource}
 date: {date}
-style: shots/css/shots-single.css
+style: shots/css/single.css
 ---"
   return template
 }
@@ -53,7 +53,7 @@ fun get_date_from_commit(file) {
 main (args) {
   let shots_path = "./assets/shots"
 
-  let images = lines($find {shots_path} -type f -name "*.jpg" -exec basename \{\} \;$ failed {
+  let images = lines($find {shots_path} -type f -maxdepth 1 -exec basename \{\} \;$ failed {
     echo "Find command failed with status: {status}"
   })
 
