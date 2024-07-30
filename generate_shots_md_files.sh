@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Written in [Amber](https://amber-lang.com/)
 # version: 0.3.4-alpha
-# date: 2024-07-28 21:49:19
+# date: 2024-07-28 22:23:35
 function replace_once__1_v0 {
     local source=$1
     local pattern=$2
@@ -64,7 +64,7 @@ description: ${desc}
 params:
   resource: ${resource}
 date: ${date}
-style: shots/css/shots-single.css
+style: shots/css/single.css
 ---"
     __AF_get_template_str48_v0="${template}";
     return 0
@@ -121,7 +121,7 @@ fi;
 }
 args=("$@")
     shots_path="./assets/shots"
-    __AMBER_VAL_8=$(find ${shots_path} -type f -name "*.jpg" -exec basename {\} \;);
+    __AMBER_VAL_8=$(find ${shots_path} -type f -maxdepth 1 -exec basename {\} \;);
     __AS=$?;
 if [ $__AS != 0 ]; then
         echo "Find command failed with status: $__AS"
