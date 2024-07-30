@@ -33,6 +33,11 @@ fun get_desc_from_commit(file) {
     echo "Failed to remove new lines in the beginning of a string, status: {status}"
   }
 
+  // Escape double quotes
+  desc = $echo "{desc}" | sed 's/"/\\\\"/g'$ failed {
+    echo "Failed to escape double quotes in description, status: {status}"
+  }
+
   if desc == "" {
     return "No description."
   }
