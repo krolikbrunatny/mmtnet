@@ -3,7 +3,7 @@ import { lines, replace_once, replace_regex, replace, trim } from "std"
 fun get_template_str(title, desc, date, resource) {
   let template = "---
 title: {title}
-description: {desc}
+description: '{desc}'
 params:
   resource: {resource}
 date: {date}
@@ -31,11 +31,6 @@ fun get_desc_from_commit(file) {
   // Remove new lines in the beginning of a string
   desc = $echo "{desc}" | sed '1\{/^[[:space:]]*\$/d;}'$ failed {
     echo "Failed to remove new lines in the beginning of a string, status: {status}"
-  }
-
-  // Escape double quotes
-  desc = $echo "{desc}" | sed 's/"/\\\\"/g'$ failed {
-    echo "Failed to escape double quotes in description, status: {status}"
   }
 
   if desc == "" {
