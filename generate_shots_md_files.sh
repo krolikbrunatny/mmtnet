@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Written in [Amber](https://amber-lang.com/)
 # version: 0.3.4-alpha
-# date: 2024-07-28 22:23:35
+# date: 2024-07-30 09:11:17
 function replace_once__1_v0 {
     local source=$1
     local pattern=$2
@@ -60,7 +60,7 @@ function get_template_str__48_v0 {
     local resource=$4
     local template="---
 title: ${title}
-description: ${desc}
+description: '${desc}'
 params:
   resource: ${resource}
 date: ${date}

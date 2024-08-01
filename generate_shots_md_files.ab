@@ -3,7 +3,7 @@ import { lines, replace_once, replace_regex, replace, trim } from "std"
 fun get_template_str(title, desc, date, resource) {
   let template = "---
 title: {title}
-description: {desc}
+description: '{desc}'
 params:
   resource: {resource}
 date: {date}
